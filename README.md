@@ -10,6 +10,7 @@ All CAD files (STEP format) are committed directly to this repository:
 - `left_finger_mount.step`
 - `right_finger.step`
 - `right_finger_mount.step`
+- `gripper_base.step`
 - `camera.step`
 
 ## Online Viewer
