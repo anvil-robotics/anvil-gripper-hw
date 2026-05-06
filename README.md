@@ -14,6 +14,7 @@ All CAD files (STEP format) are committed directly to this repository:
 - `camera.step`
 
 We provide 3D files for three types of gripper fingers:
+
 <img width="400" alt="Customizable Gripper fingers" src="https://github.com/user-attachments/assets/0d1879bd-b999-43a3-9544-f79e52263576" />
 
 - `1 pair of fine-tip flange`
