@@ -30,3 +30,8 @@ All CAD files (STEP format) are committed directly to this repository:
 ## Online Viewer
 
 [Check out the models online here](https://cad.onshape.com/documents/a4ea09ac891d3e7a10ca9128/w/d988c9d914d08a3f387bc9c2/e/584ae1d20b0bc3b6434ee4dd?renderMode=0&uiState=69e145c594e20a041f8c7513)
+
+
+## License
+CERN Open Hardware License Version 2 - Strongly Reciprocal
+Copyright 2026 Anvil Robotics
