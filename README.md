@@ -4,13 +4,14 @@
 
 ## Gripper Fingers
 
-We include 3D files for three different types of gripper fingers:
+We include 3D files for four different types of gripper fingers:
 
 <img width="400" alt="Customizable Gripper Fingers" src="customizable_gripper_fingers.png" />
 
 - 1 pair of fine-tip flange
 - 1 pair of wide-tip flange
 - 1 pair of toothed flange
+- 1 pair of hollow jaw flange (L/R reversible)
 
 ## CAD Files
 
@@ -25,6 +26,7 @@ All CAD files (STEP format) are committed directly to this repository:
 - `fine_tip_flange_right.stp`
 - `toothed_flange_left.stp`
 - `toothed_flange_right.stp`
+- `hollow_jaw_flange.stp`
 - `camera.stp`
 
 ## Online Viewer
