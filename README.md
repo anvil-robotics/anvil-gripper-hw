@@ -1,39 +1,45 @@
-# Anvil Gripper
+# Anvil hardware
 
-<img width="400" alt="Anvil Gripper" src="gripper.png" />
+URDF and MuJoCo models of Anvil's robots, the Anvil gripper with its CAD, and camera intrinsics and extrinsics.
 
-## Gripper Fingers
+| [OpenArm v1](openarm-v1) | [OpenArm v2](openarm-v2) | [OpenYAM](openyam) | [OpenYAM bimanual](openyam) | [Anvil gripper](anvil-gripper) |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="openarm-v1/openarm-v1.png" width="170"> | <img src="openarm-v2/openarm-v2.png" width="170"> | <img src="openyam/openyam.png" width="170"> | <img src="openyam/openyam-bimanual.png" width="170"> | <img src="anvil-gripper/gripper.png" width="170"> |
 
-We include 3D files for four different types of gripper fingers:
+## Models
 
-<img width="400" alt="Customizable Gripper Fingers" src="customizable_gripper_fingers.png" />
+| | URDF | MuJoCo | Camera extrinsics |
+|---|---|---|---|
+| OpenArm v1 | [`openarm-v1.urdf`](openarm-v1/openarm-v1.urdf) | [`openarm-v1.xml`](openarm-v1/openarm-v1.xml) | [`openarm-v1-cameras.yaml`](openarm-v1/openarm-v1-cameras.yaml) |
+| OpenArm v2 | [`openarm-v2.urdf`](openarm-v2/openarm-v2.urdf) | [`openarm-v2.xml`](openarm-v2/openarm-v2.xml) | [`openarm-v2-cameras.yaml`](openarm-v2/openarm-v2-cameras.yaml) |
+| OpenYAM | [`openyam.urdf`](openyam/openyam.urdf) | [`openyam.xml`](openyam/openyam.xml) | [`openyam-cameras.yaml`](openyam/openyam-cameras.yaml) |
+| OpenYAM bimanual | [`openyam-bimanual.urdf`](openyam/openyam-bimanual.urdf) | [`openyam-bimanual.xml`](openyam/openyam-bimanual.xml) | [`openyam-bimanual-cameras.yaml`](openyam/openyam-bimanual-cameras.yaml) |
+| Anvil gripper | [`anvil-gripper.urdf`](anvil-gripper/anvil-gripper.urdf) | [`anvil-gripper.xml`](anvil-gripper/anvil-gripper.xml) | [`anvil-gripper-cameras.yaml`](anvil-gripper/anvil-gripper-cameras.yaml) |
 
-- 1 pair of fine-tip flange
-- 1 pair of wide-tip flange
-- 1 pair of toothed flange
-- 1 pair of hollow jaw flange (L/R reversible)
+Each model's meshes are in the `meshes/` folder beside it. Units are meters and radians.
 
-## CAD Files
+## Cameras
 
-All CAD files (STEP format) are committed directly to this repository:
+**Intrinsics** are per lens, in [`anvil-camera-intrinsics/`](anvil-camera-intrinsics), at 1920×1080 as ROS
+`camera_info`: [standard](anvil-camera-intrinsics/standard-1920x1080.yaml),
+[pseudo-fisheye](anvil-camera-intrinsics/pseudo-fisheye-1920x1080.yaml) and
+[fisheye](anvil-camera-intrinsics/fisheye-1920x1080.yaml).
 
-- `gripper_base.stp`
-- `left_finger_mount.stp`
-- `right_finger_mount.stp`
-- `wide_tip_flange_left.stp`
-- `wide_tip_flange_right.stp`
-- `fine_tip_flange_left.stp`
-- `fine_tip_flange_right.stp`
-- `toothed_flange_left.stp`
-- `toothed_flange_right.stp`
-- `hollow_jaw_flange.stp`
-- `camera.stp`
+**Extrinsics** are per robot, in its `-cameras.yaml` above: the pose of each camera on the robot. The same cameras are
+the `*_cam` links of its URDF.
 
-## Online Viewer
+| | Cameras |
+|---|---|
+| OpenArm v1, v2 | `chest_cam`, `waist_cam`, `left_wrist_cam`, `right_wrist_cam` |
+| OpenYAM | `wrist_cam` |
+| OpenYAM bimanual | `pole_cam`, `left_wrist_cam`, `right_wrist_cam` |
+| Anvil gripper | `wrist_cam` |
 
-[Check out the models online here](https://cad.onshape.com/documents/a4ea09ac891d3e7a10ca9128/w/d988c9d914d08a3f387bc9c2/e/584ae1d20b0bc3b6434ee4dd?renderMode=0&uiState=69e145c594e20a041f8c7513)
+## Gripper CAD
 
+STEP files of the gripper and its finger sets are in [`anvil-gripper/cad/`](anvil-gripper/cad).
 
 ## License
-CERN Open Hardware License Version 2 - Strongly Reciprocal
-Copyright 2026 Anvil Robotics
+
+Apache-2.0 ([`LICENSE`](LICENSE)), except the gripper's CAD in [`anvil-gripper/cad/`](anvil-gripper/cad), which is
+CERN-OHL-S-2.0 ([`LICENSE`](anvil-gripper/cad/LICENSE)).

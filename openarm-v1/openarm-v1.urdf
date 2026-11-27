@@ -1,0 +1,2305 @@
+<robot name="openarm-v1">
+  <link name="world">
+    </link>
+  <link name="body_link0">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="13.89" />
+      <inertia ixx="1.653" ixy="0" ixz="0" iyy="1.653" iyz="0" izz="0.051" />
+    </inertial>
+    <visual name="body_link0_white_visual">
+      <origin xyz="-0.0054121314 0.0000168947 0.0008923734" rpy="1.570796327 -0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <visual name="body_link0_dark_visual">
+      <origin xyz="-0.0054121314 0.0000168947 0.0008923734" rpy="1.570796327 -0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-dark.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <visual name="body_link0_gray_visual">
+      <origin xyz="-0.0054121314 0.0000168947 0.0008923734" rpy="1.570796327 -0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="body_link0_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c08.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c09.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c10.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-symp-c11.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_chest_camera_collision">
+      <origin xyz="-0.0054121314 0.0000168947 0.0008923734" rpy="1.570796327 -0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-chest-camera-collision.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="body_link0_waist_camera_collision">
+      <origin xyz="-0.0054121314 0.0000168947 0.0008923734" rpy="1.570796327 -0 0" />
+      <geometry>
+        <mesh filename="meshes/body-link0-waist-camera-collision.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link0">
+    <inertial>
+      <origin xyz="-0.0009483362816297526 -0.0001580207020448382 0.03076860287587199" rpy="0 0 0" />
+      <mass value="1.1432284943239561" />
+      <inertia ixx="0.001128" ixy="-0.000004" ixz="-0.000033" iyy="0.000962" iyz="-0.000007" izz="0.00147" />
+    </inertial>
+    <visual name="left_link0_gray_visual">
+      <origin xyz="-0.0054121314 0.6971077404 -0.03098054468" rpy="-3.14158898 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link0-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="left_link0_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link0-symp-mirrored.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link1">
+    <inertial>
+      <origin xyz="0.0011467657911800769 -0.00003319987657026362 0.05395284380736254" rpy="0 0 0" />
+      <mass value="1.1416684646202298" />
+      <inertia ixx="0.001567" ixy="-0.000001" ixz="-0.000029" iyy="0.001273" iyz="0.000001" izz="0.001016" />
+    </inertial>
+    <visual name="left_link1_gray_visual">
+      <origin xyz="-0.0054121314 0.6971077404 -0.09348054468" rpy="-3.14158898 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link1-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <visual name="left_link1_white_visual">
+      <origin xyz="-0.0054121314 0.6971077404 -0.09348054468" rpy="-3.14158898 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link1-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision name="left_link1_collision">
+      <origin xyz="-0 0 -0.0625" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link1-symp-mirrored.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link2">
+    <inertial>
+      <origin xyz="0.00839629182351943 0.000000020145102027597523 0.03256649300522363" rpy="0 0 0" />
+      <mass value="0.2775092746011571" />
+      <inertia ixx="0.000359" ixy="0.000001" ixz="-0.000109" iyy="0.000376" iyz="0.000001" izz="0.000232" />
+    </inertial>
+    <visual name="left_link2_white_visual">
+      <origin xyz="0.0246878686 0.1534805447 0.6971077404" rpy="-1.570792654 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link2-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision name="left_link2_collision_c00">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c01">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c02">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c03">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c04">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c05">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c06">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c07">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c08">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c08.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c09">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c09.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c10">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c10.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link2_collision_c11">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-mirrored-c11.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link3">
+    <inertial>
+      <origin xyz="-0.002104752099628911 -0.0005549085042607548 0.09047470545721961" rpy="0 0 0" />
+      <mass value="1.073863338202347" />
+      <inertia ixx="0.004372" ixy="0.000001" ixz="0.000011" iyy="0.004319" iyz="-0.000036" izz="0.000661" />
+    </inertial>
+    <visual name="left_link3_white_visual">
+      <origin xyz="-0.0054121314 0.1534805447 0.6308577404" rpy="-1.570792654 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link3-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <visual name="left_link3_gray_visual">
+      <origin xyz="-0.0054121314 0.1534805447 0.6308577404" rpy="-1.570792654 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link3-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="left_link3_collision_c00">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-mirrored-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link3_collision_c01">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-mirrored-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link3_collision_c02">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-mirrored-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link3_collision_c03">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-mirrored-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link3_collision_c04">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-mirrored-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link4">
+    <inertial>
+      <origin xyz="-0.0029006831074562967 -0.03030575826634669 0.06339637422196209" rpy="0 0 0" />
+      <mass value="0.6348534566833373" />
+      <inertia ixx="0.000623" ixy="-0.000001" ixz="-0.000019" iyy="0.000511" iyz="0.000038" izz="0.000334" />
+    </inertial>
+    <visual name="left_link4_gray_visual">
+      <origin xyz="-0.0054121314 0.1219805447 0.4771077404" rpy="-1.570792654 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link4-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <visual name="left_link4_white_visual">
+      <origin xyz="-0.0054121314 0.1219805447 0.4771077404" rpy="-1.570792654 -0 0" />
+      <geometry>
+        <mesh filename="meshes/left-link4-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision name="left_link4_collision_c00">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c01">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c02">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c03">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c04">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c05">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c06">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c07">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c08">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c08.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c09">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c09.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c10">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c10.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link4_collision_c11">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c11.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link5">
+    <inertial>
+      <origin xyz="-0.003049665024221911 -0.0008866902457326625 0.043079803024980934" rpy="0 0 0" />
+      <mass value="0.6156588026168502" />
+      <inertia ixx="0.000423" ixy="-0.000008" ixz="0.000006" iyy="0.000445" iyz="-0.000006" izz="0.000324" />
+    </inertial>
+    <visual name="left_link5_gray_visual">
+      <origin xyz="-0.1534805248 -0.005412695165 0.3816077404" rpy="-1.570792654 -0 1.5708" />
+      <geometry>
+        <mesh filename="meshes/left-link5-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="left_link5_collision_c00">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c01">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c02">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c03">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c04">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c05">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c06">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c07">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c08">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c08.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c09">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c09.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c10">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c10.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link5_collision_c11">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-mirrored-c11.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link6">
+    <inertial>
+      <origin xyz="-0.037136587005447405 -0.00033230528343419053 -0.00009498374522309838" rpy="0 0 0" />
+      <mass value="0.475202773187987" />
+      <inertia ixx="0.000143" ixy="0.000001" ixz="0.000001" iyy="0.000157" iyz="0.000001" izz="0.000159" />
+    </inertial>
+    <visual name="left_link6_gray_visual">
+      <origin xyz="0.1159805646 0.005411567634 0.2611077404" rpy="-1.570792654 -0 -1.5708" />
+      <geometry>
+        <mesh filename="meshes/left-link6-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="left_link6_collision">
+      <origin xyz="-0.0375 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link6-symp-mirrored.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_link7">
+    <inertial>
+      <origin xyz="0.00006875510271106056 -0.01266175250761268 0.06951945409987448" rpy="0 0 0" />
+      <mass value="0.4659771327380578" />
+      <inertia ixx="0.000639" ixy="0.000001" ixz="0.000001" iyy="0.000497" iyz="0.000089" izz="0.000342" />
+    </inertial>
+    <visual name="left_link7_gray_visual">
+      <origin xyz="0.1534805646 0.005411567634 0.2611077404" rpy="-1.570792654 -0 -1.5708" />
+      <geometry>
+        <mesh filename="meshes/left-link7-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="left_link7_collision_c00">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-mirrored-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link7_collision_c01">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-mirrored-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link7_collision_c02">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-mirrored-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link7_collision_c03">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-mirrored-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="left_link7_collision_c04">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-mirrored-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link0">
+    <inertial>
+      <origin xyz="-0.0009483362816297526 0.0001580207020448382 0.03076860287587199" rpy="0 0 0" />
+      <mass value="1.1432284943239561" />
+      <inertia ixx="0.001128" ixy="-0.000004" ixz="-0.000033" iyy="0.000962" iyz="-0.000007" izz="0.00147" />
+    </inertial>
+    <visual name="right_link0_gray_visual">
+      <origin xyz="-0.0054121314 -0.6971077405 -0.03101433408" rpy="-0.000003673205103 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link0-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="right_link0_collision">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link0-symp.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link1">
+    <inertial>
+      <origin xyz="0.0011467657911800769 0.00003319987657026362 0.05395284380736254" rpy="0 0 0" />
+      <mass value="1.1416684646202298" />
+      <inertia ixx="0.001567" ixy="-0.000001" ixz="-0.000029" iyy="0.001273" iyz="0.000001" izz="0.001016" />
+    </inertial>
+    <visual name="right_link1_white_visual">
+      <origin xyz="-0.0054121314 -0.6971077405 -0.09351433408" rpy="-0.000003673205103 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link1-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <visual name="right_link1_gray_visual">
+      <origin xyz="-0.0054121314 -0.6971077405 -0.09351433408" rpy="-0.000003673205103 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link1-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="right_link1_collision">
+      <origin xyz="-0 0 -0.0625" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link1-symp.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link2">
+    <inertial>
+      <origin xyz="0.00839629182351943 -0.000000020145102027597523 0.03256649300522363" rpy="0 0 0" />
+      <mass value="0.2775092746011571" />
+      <inertia ixx="0.000359" ixy="0.000001" ixz="-0.000109" iyy="0.000376" iyz="0.000001" izz="0.000232" />
+    </inertial>
+    <visual name="right_link2_white_visual">
+      <origin xyz="0.0246878686 -0.1535143341 0.6971077405" rpy="-1.5708 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link2-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision name="right_link2_collision_c00">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c01">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c02">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c03">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c04">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c05">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c06">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c07">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c08">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c08.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c09">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c09.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link2_collision_c10">
+      <origin xyz="0.0301 0 -0.1225" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link2-symp-c10.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link3">
+    <inertial>
+      <origin xyz="-0.002104752099628911 0.0005549085042607548 0.09047470545721961" rpy="0 0 0" />
+      <mass value="1.073863338202347" />
+      <inertia ixx="0.004372" ixy="0.000001" ixz="0.000011" iyy="0.004319" iyz="-0.000036" izz="0.000661" />
+    </inertial>
+    <visual name="right_link3_gray_visual">
+      <origin xyz="-0.0054121314 -0.1535143341 0.6308577405" rpy="-1.5708 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link3-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <visual name="right_link3_white_visual">
+      <origin xyz="-0.0054121314 -0.1535143341 0.6308577405" rpy="-1.5708 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link3-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision name="right_link3_collision_c00">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link3_collision_c01">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link3_collision_c02">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link3_collision_c03">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link3_collision_c04">
+      <origin xyz="-0 -0 -0.18875" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link3-symp-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link4">
+    <inertial>
+      <origin xyz="-0.0029006831074562967 -0.03030575826634669 0.06339637422196209" rpy="0 0 0" />
+      <mass value="0.6348534566833373" />
+      <inertia ixx="0.000623" ixy="-0.000001" ixz="-0.000019" iyy="0.000511" iyz="0.000038" izz="0.000334" />
+    </inertial>
+    <visual name="right_link4_gray_visual">
+      <origin xyz="-0.0054121314 -0.1850143341 0.4771077405" rpy="-1.5708 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link4-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <visual name="right_link4_white_visual">
+      <origin xyz="-0.0054121314 -0.1850143341 0.4771077405" rpy="-1.5708 -0 0" />
+      <geometry>
+        <mesh filename="meshes/right-link4-white.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="white_255">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision name="right_link4_collision_c00">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c01">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c02">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c03">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c04">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c05">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c06">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c07">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c08">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c08.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c09">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c09.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c10">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c10.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link4_collision_c11">
+      <origin xyz="0 -0.0315 -0.3425" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link4-symp-c11.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link5">
+    <inertial>
+      <origin xyz="-0.003049665024221911 0.0008866902457326625 0.043079803024980934" rpy="0 0 0" />
+      <mass value="0.6156588026168502" />
+      <inertia ixx="0.000423" ixy="-0.000008" ixz="0.000006" iyy="0.000445" iyz="-0.000006" izz="0.000324" />
+    </inertial>
+    <visual name="right_link5_gray_visual">
+      <origin xyz="0.153514354 -0.00541156751 0.3816077405" rpy="-1.5708 -0 1.5708" />
+      <geometry>
+        <mesh filename="meshes/right-link5-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="right_link5_collision_c00">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c01">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c02">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c03">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c04">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c05">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c06">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c07">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c08">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c08.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c09">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c09.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c10">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c10.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link5_collision_c11">
+      <origin xyz="-0 -0 -0.438" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link5-symp-c11.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link6">
+    <inertial>
+      <origin xyz="-0.037136587005447405 0.00033230528343419053 -0.00009498374522309838" rpy="0 0 0" />
+      <mass value="0.475202773187987" />
+      <inertia ixx="0.000143" ixy="0.000001" ixz="0.000001" iyy="0.000157" iyz="0.000001" izz="0.000159" />
+    </inertial>
+    <visual name="right_link6_gray_visual">
+      <origin xyz="0.116014354 -0.00541156751 0.2611077405" rpy="-1.5708 -0 1.5708" />
+      <geometry>
+        <mesh filename="meshes/right-link6-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="right_link6_collision">
+      <origin xyz="-0.0375 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link6-symp.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_link7">
+    <inertial>
+      <origin xyz="0.00006875510271106056 0.01266175250761268 0.06951945409987448" rpy="0 0 0" />
+      <mass value="0.4659771327380578" />
+      <inertia ixx="0.000639" ixy="0.000001" ixz="0.000001" iyy="0.000497" iyz="0.000089" izz="0.000342" />
+    </inertial>
+    <visual name="right_link7_gray_visual">
+      <origin xyz="0.153514354 -0.00541156751 0.2611077405" rpy="-1.5708 -0 1.5708" />
+      <geometry>
+        <mesh filename="meshes/right-link7-gray.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="right_link7_collision_c00">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-c00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link7_collision_c01">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-c01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link7_collision_c02">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-c02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+    <collision name="right_link7_collision_c03">
+      <origin xyz="0 -0 -0.5585" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/link7-symp-c03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_hand">
+    <inertial>
+      <origin xyz="0 0.002 0.03" rpy="0 0 0" />
+      <mass value="0.7" />
+      <inertia ixx="0.0002473" ixy="0.000001" ixz="0.000001" iyy="0.00001763" iyz="0.000001" izz="0.0002521" />
+    </inertial>
+    <visual name="left_hand_anodized_black_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-anodized-black.obj" />
+      </geometry>
+      <material name="anodized_black">
+        <color rgba="0.11 0.11 0.115 1" />
+      </material>
+    </visual>
+    <visual name="left_hand_camera_gray_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-gray.stl" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="left_hand_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_body_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c11.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_hand_camera_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c11.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="waist_cam">
+    </link>
+  <link name="chest_cam">
+    </link>
+  <link name="right_hand">
+    <inertial>
+      <origin xyz="0 0.002 0.03" rpy="0 0 0" />
+      <mass value="0.7" />
+      <inertia ixx="0.0002473" ixy="0.000001" ixz="0.000001" iyy="0.00001763" iyz="0.000001" izz="0.0002521" />
+    </inertial>
+    <visual name="right_hand_anodized_black_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-anodized-black.obj" />
+      </geometry>
+      <material name="anodized_black">
+        <color rgba="0.11 0.11 0.115 1" />
+      </material>
+    </visual>
+    <visual name="right_hand_camera_gray_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-gray.stl" />
+      </geometry>
+      <material name="gray_175">
+        <color rgba="0.686275 0.686275 0.686275 1" />
+      </material>
+    </visual>
+    <collision name="right_hand_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_body_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-body-collision-c11.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_hand_camera_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/hand-camera-collision-c11.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_wrist_cam">
+    </link>
+  <link name="left_right_finger">
+    <inertial>
+      <origin xyz="0.0064528 -0.01702 0.0219685" rpy="0 0 0" />
+      <mass value="0.03602545343277134" />
+      <inertia ixx="0.00001444" ixy="0.0000007351" ixz="0.000002792" iyy="0.00001976" iyz="-0.000003509" izz="0.000009927" />
+    </inertial>
+    <visual name="left_right_finger_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <visual name="left_right_finger_fine_tip_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <collision name="left_right_finger_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c11.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_right_finger_fine_tip_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c11.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_left_finger">
+    <inertial>
+      <origin xyz="0.0064528 0.01702 0.0219685" rpy="0 0 0" />
+      <mass value="0.03602545343277134" />
+      <inertia ixx="0.00001445" ixy="-0.0000007397" ixz="0.00000243" iyy="0.00001966" iyz="0.00000351" izz="0.000009827" />
+    </inertial>
+    <visual name="left_left_finger_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <visual name="left_left_finger_fine_tip_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <collision name="left_left_finger_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c11.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_left_finger_fine_tip_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c11.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_hand_tcp">
+    </link>
+  <link name="right_wrist_cam">
+    </link>
+  <link name="right_right_finger">
+    <inertial>
+      <origin xyz="0.0064528 -0.01702 0.0219685" rpy="0 0 0" />
+      <mass value="0.03602545343277134" />
+      <inertia ixx="0.00001444" ixy="0.0000007351" ixz="0.000002792" iyy="0.00001976" iyz="-0.000003509" izz="0.000009927" />
+    </inertial>
+    <visual name="right_right_finger_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <visual name="right_right_finger_fine_tip_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <collision name="right_right_finger_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-collision-c11.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_right_finger_fine_tip_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/right-finger-fine-tip-collision-c11.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_left_finger">
+    <inertial>
+      <origin xyz="0.0064528 0.01702 0.0219685" rpy="0 0 0" />
+      <mass value="0.03602545343277134" />
+      <inertia ixx="0.00001445" ixy="-0.0000007397" ixz="0.00000243" iyy="0.00001966" iyz="0.00000351" izz="0.000009827" />
+    </inertial>
+    <visual name="right_left_finger_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <visual name="right_left_finger_fine_tip_dark_visual">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-dark.stl" />
+      </geometry>
+      <material name="dark_60">
+        <color rgba="0.235294 0.235294 0.235294 1" />
+      </material>
+    </visual>
+    <collision name="right_left_finger_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-collision-c11.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c00.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c01.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c02.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c03.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c04.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c05">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c05.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c06">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c06.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c07">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c07.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c08">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c08.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c09">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c09.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c10">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c10.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_left_finger_fine_tip_collision_c11">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/left-finger-fine-tip-collision-c11.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_hand_tcp">
+    </link>
+  <joint name="body_world_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="world" />
+    <child link="body_link0" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="left_body_link0_joint" type="fixed">
+    <origin xyz="0 0.031 0.698" rpy="-1.5708 0 0" />
+    <parent link="body_link0" />
+    <child link="left_link0" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="left_joint_1" type="revolute">
+    <origin xyz="0 0 0.0625" rpy="0 0 0" />
+    <parent link="left_link0" />
+    <child link="left_link1" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.4435" upper="2.4435" effort="40" velocity="10.47" />
+    <dynamics damping="0" friction="0.541" />
+  </joint>
+  <joint name="left_joint_2" type="revolute">
+    <origin xyz="-0.0301 0 0.06" rpy="-1.57079632679 0 0" />
+    <parent link="left_link1" />
+    <child link="left_link2" />
+    <axis xyz="-1 0 0" />
+    <limit lower="-3.3161" upper="0.1745" effort="40" velocity="10.47" />
+    <dynamics damping="0" friction="0.541" />
+  </joint>
+  <joint name="left_joint_3" type="revolute">
+    <origin xyz="0.0301 0 0.06625" rpy="0 0 0" />
+    <parent link="left_link2" />
+    <child link="left_link3" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.570796" upper="1.570796" effort="27" velocity="3.77" />
+    <dynamics damping="0" friction="0.411" />
+  </joint>
+  <joint name="left_joint_4" type="revolute">
+    <origin xyz="-0 0.0315 0.15375" rpy="0 0 0" />
+    <parent link="left_link3" />
+    <child link="left_link4" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="2.443461" effort="27" velocity="3.77" />
+    <dynamics damping="0" friction="1.09" />
+  </joint>
+  <joint name="left_joint_5" type="revolute">
+    <origin xyz="0 -0.0315 0.0955" rpy="0 0 0" />
+    <parent link="left_link4" />
+    <child link="left_link5" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.570796" upper="1.570796" effort="7" velocity="12.57" />
+    <dynamics damping="0" friction="0.125" />
+  </joint>
+  <joint name="left_joint_6" type="revolute">
+    <origin xyz="0.0375 0 0.1205" rpy="0 0 0" />
+    <parent link="left_link5" />
+    <child link="left_link6" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.785398" upper="0.785398" effort="7" velocity="12.57" />
+    <dynamics damping="0" friction="0.126" />
+  </joint>
+  <joint name="left_joint_7" type="revolute">
+    <origin xyz="-0.0375 0 0" rpy="0 0 0" />
+    <parent link="left_link6" />
+    <child link="left_link7" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-1.570796" upper="1.570796" effort="7" velocity="12.57" />
+    <dynamics damping="0" friction="0.0968" />
+  </joint>
+  <joint name="right_body_link0_joint" type="fixed">
+    <origin xyz="0 -0.031 0.698" rpy="1.5708 0 0" />
+    <parent link="body_link0" />
+    <child link="right_link0" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="right_joint_1" type="revolute">
+    <origin xyz="0 0 0.0625" rpy="0 0 0" />
+    <parent link="right_link0" />
+    <child link="right_link1" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.4435" upper="2.4435" effort="40" velocity="10.47" />
+    <dynamics damping="0" friction="0.491" />
+  </joint>
+  <joint name="right_joint_2" type="revolute">
+    <origin xyz="-0.0301 0 0.06" rpy="1.57079632679 0 0" />
+    <parent link="right_link1" />
+    <child link="right_link2" />
+    <axis xyz="-1 0 0" />
+    <limit lower="-0.1745" upper="3.3161" effort="40" velocity="10.47" />
+    <dynamics damping="0" friction="0.54" />
+  </joint>
+  <joint name="right_joint_3" type="revolute">
+    <origin xyz="0.0301 0 0.06625" rpy="0 0 0" />
+    <parent link="right_link2" />
+    <child link="right_link3" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.570796" upper="1.570796" effort="27" velocity="3.77" />
+    <dynamics damping="0" friction="0.379" />
+  </joint>
+  <joint name="right_joint_4" type="revolute">
+    <origin xyz="-0 0.0315 0.15375" rpy="0 0 0" />
+    <parent link="right_link3" />
+    <child link="right_link4" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="2.443461" effort="27" velocity="3.77" />
+    <dynamics damping="0" friction="1.2" />
+  </joint>
+  <joint name="right_joint_5" type="revolute">
+    <origin xyz="0 -0.0315 0.0955" rpy="0 0 0" />
+    <parent link="right_link4" />
+    <child link="right_link5" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.570796" upper="1.570796" effort="7" velocity="12.57" />
+    <dynamics damping="0" friction="0.109" />
+  </joint>
+  <joint name="right_joint_6" type="revolute">
+    <origin xyz="0.0375 0 0.1205" rpy="0 0 0" />
+    <parent link="right_link5" />
+    <child link="right_link6" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.785398" upper="0.785398" effort="7" velocity="12.57" />
+    <dynamics damping="0" friction="0.142" />
+  </joint>
+  <joint name="right_joint_7" type="revolute">
+    <origin xyz="-0.0375 0 0" rpy="0 0 0" />
+    <parent link="right_link6" />
+    <child link="right_link7" />
+    <axis xyz="0 1 0" />
+    <limit lower="-1.570796" upper="1.570796" effort="7" velocity="12.57" />
+    <dynamics damping="0" friction="0.119" />
+  </joint>
+  <joint name="left_openarm_hand_joint" type="fixed">
+    <origin xyz="0 -0 0.1001" rpy="0 0 0" />
+    <parent link="left_link7" />
+    <child link="left_hand" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="waist_cam_joint" type="fixed">
+    <origin xyz="0.0827 0 0.3898" rpy="-1.5708 0 -1.5708" />
+    <parent link="body_link0" />
+    <child link="waist_cam" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="chest_cam_joint" type="fixed">
+    <origin xyz="0.0888 0 0.6231" rpy="-2.4051 0 -1.5708" />
+    <parent link="body_link0" />
+    <child link="chest_cam" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="right_openarm_hand_joint" type="fixed">
+    <origin xyz="0 -0 0.1001" rpy="0 0 0" />
+    <parent link="right_link7" />
+    <child link="right_hand" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="left_wrist_cam_joint" type="fixed">
+    <origin xyz="0.074 0.001 0.009" rpy="-0.8255 0 1.5708" />
+    <parent link="left_hand" />
+    <child link="left_wrist_cam" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="left_finger_joint1" type="prismatic">
+    <origin xyz="0 -0.006 0.015" rpy="0 0 0" />
+    <parent link="left_hand" />
+    <child link="left_right_finger" />
+    <axis xyz="0 -1 0" />
+    <limit lower="0" upper="0.05" effort="10" velocity="1" />
+    <dynamics damping="60.5" friction="9.26" />
+  </joint>
+  <joint name="left_finger_joint2" type="prismatic">
+    <origin xyz="0 0.006 0.015" rpy="0 0 0" />
+    <parent link="left_hand" />
+    <child link="left_left_finger" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="0.05" effort="10" velocity="1" />
+    <mimic joint="left_finger_joint1" />
+  </joint>
+  <joint name="left_hand_tcp_joint" type="fixed">
+    <origin xyz="0 0 0.08" rpy="0 0 0" />
+    <parent link="left_hand" />
+    <child link="left_hand_tcp" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="right_wrist_cam_joint" type="fixed">
+    <origin xyz="0.074 0.001 0.009" rpy="-0.8255 0 1.5708" />
+    <parent link="right_hand" />
+    <child link="right_wrist_cam" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+  <joint name="right_finger_joint1" type="prismatic">
+    <origin xyz="0 -0.006 0.015" rpy="0 0 0" />
+    <parent link="right_hand" />
+    <child link="right_right_finger" />
+    <axis xyz="0 -1 0" />
+    <limit lower="0" upper="0.05" effort="10" velocity="1" />
+    <dynamics damping="60.5" friction="9.26" />
+  </joint>
+  <joint name="right_finger_joint2" type="prismatic">
+    <origin xyz="0 0.006 0.015" rpy="0 0 0" />
+    <parent link="right_hand" />
+    <child link="right_left_finger" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="0.05" effort="10" velocity="1" />
+    <mimic joint="right_finger_joint1" />
+  </joint>
+  <joint name="right_hand_tcp_joint" type="fixed">
+    <origin xyz="0 0 0.08" rpy="0 0 0" />
+    <parent link="right_hand" />
+    <child link="right_hand_tcp" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+<mujoco>
+    <compiler balanceinertia="true" fusestatic="false" discardvisual="false" />
+  </mujoco></robot>
