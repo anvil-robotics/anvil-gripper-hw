@@ -1,0 +1,740 @@
+<mujoco model="openarm-v2">
+  <compiler angle="radian"/>
+
+  <asset>
+    <mesh name="body-link0-aluminium" file="meshes/body-link0-aluminium.obj"/>
+    <mesh name="body-link0-aluminium-plate" file="meshes/body-link0-aluminium-plate.obj"/>
+    <mesh name="body-link0-anodized-black" file="meshes/body-link0-anodized-black.obj"/>
+    <mesh name="body-link0-color-cc1a14" file="meshes/body-link0-color-cc1a14.obj"/>
+    <mesh name="body-link0-color-f2b814" file="meshes/body-link0-color-f2b814.obj"/>
+    <mesh name="body-link0-frosted-white" file="meshes/body-link0-frosted-white.obj"/>
+    <mesh name="body-link0-matte-black" file="meshes/body-link0-matte-black.obj"/>
+    <mesh name="body-link0-sheet-metal" file="meshes/body-link0-sheet-metal.obj"/>
+    <mesh name="body-link0-steel-dark" file="meshes/body-link0-steel-dark.obj"/>
+    <mesh name="body-link0-zinc" file="meshes/body-link0-zinc.obj"/>
+    <mesh name="body-link0-symp-c00" file="meshes/body-link0-symp-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c01" file="meshes/body-link0-symp-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c02" file="meshes/body-link0-symp-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c03" file="meshes/body-link0-symp-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c04" file="meshes/body-link0-symp-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c05" file="meshes/body-link0-symp-c05.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c06" file="meshes/body-link0-symp-c06.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c07" file="meshes/body-link0-symp-c07.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c08" file="meshes/body-link0-symp-c08.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c09" file="meshes/body-link0-symp-c09.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c10" file="meshes/body-link0-symp-c10.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-symp-c11" file="meshes/body-link0-symp-c11.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-chest-camera-collision" file="meshes/body-link0-chest-camera-collision.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="body-link0-waist-camera-collision" file="meshes/body-link0-waist-camera-collision.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link0-symp-mirrored" file="meshes/link0-symp-mirrored.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left-link1-color-cc1a14" file="meshes/left-link1-color-cc1a14.obj"/>
+    <mesh name="left-link1-color-f2b814" file="meshes/left-link1-color-f2b814.obj"/>
+    <mesh name="left-link1-frosted-white" file="meshes/left-link1-frosted-white.obj"/>
+    <mesh name="left-link1-matte-black" file="meshes/left-link1-matte-black.obj"/>
+    <mesh name="left-link1-sheet-metal" file="meshes/left-link1-sheet-metal.obj"/>
+    <mesh name="left-link1-steel-dark" file="meshes/left-link1-steel-dark.obj"/>
+    <mesh name="link1-symp-mirrored" file="meshes/link1-symp-mirrored.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left-link2-frosted-white" file="meshes/left-link2-frosted-white.obj"/>
+    <mesh name="left-link2-sheet-metal" file="meshes/left-link2-sheet-metal.obj"/>
+    <mesh name="link2-symp-mirrored-c00" file="meshes/link2-symp-mirrored-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c01" file="meshes/link2-symp-mirrored-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c02" file="meshes/link2-symp-mirrored-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c03" file="meshes/link2-symp-mirrored-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c04" file="meshes/link2-symp-mirrored-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c05" file="meshes/link2-symp-mirrored-c05.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c06" file="meshes/link2-symp-mirrored-c06.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c07" file="meshes/link2-symp-mirrored-c07.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c08" file="meshes/link2-symp-mirrored-c08.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c09" file="meshes/link2-symp-mirrored-c09.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c10" file="meshes/link2-symp-mirrored-c10.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-mirrored-c11" file="meshes/link2-symp-mirrored-c11.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left-link3-anodized-black" file="meshes/left-link3-anodized-black.obj"/>
+    <mesh name="left-link3-frosted-white" file="meshes/left-link3-frosted-white.obj"/>
+    <mesh name="left-link3-matte-black" file="meshes/left-link3-matte-black.obj"/>
+    <mesh name="left-link3-sheet-metal" file="meshes/left-link3-sheet-metal.obj"/>
+    <mesh name="left-link3-steel-dark" file="meshes/left-link3-steel-dark.obj"/>
+    <mesh name="link3-symp-mirrored-c00" file="meshes/link3-symp-mirrored-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-mirrored-c01" file="meshes/link3-symp-mirrored-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-mirrored-c02" file="meshes/link3-symp-mirrored-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-mirrored-c03" file="meshes/link3-symp-mirrored-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-mirrored-c04" file="meshes/link3-symp-mirrored-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left-link4-frosted-white" file="meshes/left-link4-frosted-white.obj"/>
+    <mesh name="left-link4-matte-black" file="meshes/left-link4-matte-black.obj"/>
+    <mesh name="left-link4-sheet-metal" file="meshes/left-link4-sheet-metal.obj"/>
+    <mesh name="left-link4-stainless" file="meshes/left-link4-stainless.obj"/>
+    <mesh name="left-link4-steel-dark" file="meshes/left-link4-steel-dark.obj"/>
+    <mesh name="link4-symp-c00" file="meshes/link4-symp-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c01" file="meshes/link4-symp-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c02" file="meshes/link4-symp-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c03" file="meshes/link4-symp-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c04" file="meshes/link4-symp-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c05" file="meshes/link4-symp-c05.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c06" file="meshes/link4-symp-c06.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c07" file="meshes/link4-symp-c07.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c08" file="meshes/link4-symp-c08.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c09" file="meshes/link4-symp-c09.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c10" file="meshes/link4-symp-c10.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link4-symp-c11" file="meshes/link4-symp-c11.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left-link5-matte-black" file="meshes/left-link5-matte-black.obj"/>
+    <mesh name="left-link5-sheet-metal" file="meshes/left-link5-sheet-metal.obj"/>
+    <mesh name="left-link5-steel-dark" file="meshes/left-link5-steel-dark.obj"/>
+    <mesh name="link5-symp-mirrored-c00" file="meshes/link5-symp-mirrored-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c01" file="meshes/link5-symp-mirrored-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c02" file="meshes/link5-symp-mirrored-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c03" file="meshes/link5-symp-mirrored-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c04" file="meshes/link5-symp-mirrored-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c05" file="meshes/link5-symp-mirrored-c05.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c06" file="meshes/link5-symp-mirrored-c06.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c07" file="meshes/link5-symp-mirrored-c07.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c08" file="meshes/link5-symp-mirrored-c08.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c09" file="meshes/link5-symp-mirrored-c09.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c10" file="meshes/link5-symp-mirrored-c10.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-mirrored-c11" file="meshes/link5-symp-mirrored-c11.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left-link6-matte-black" file="meshes/left-link6-matte-black.obj"/>
+    <mesh name="left-link6-sheet-metal" file="meshes/left-link6-sheet-metal.obj"/>
+    <mesh name="left-link6-steel-dark" file="meshes/left-link6-steel-dark.obj"/>
+    <mesh name="link6-symp-mirrored" file="meshes/link6-symp-mirrored.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="left-link6-crank-sheet-metal" file="meshes/left-link6-crank-sheet-metal.obj"/>
+    <mesh name="left-link6-crank-collision" file="meshes/left-link6-crank-collision.stl"/>
+    <mesh name="left-link6-bar-sheet-metal" file="meshes/left-link6-bar-sheet-metal.obj"/>
+    <mesh name="left-link6-bar-collision" file="meshes/left-link6-bar-collision.stl"/>
+    <mesh name="left-link7-sheet-metal" file="meshes/left-link7-sheet-metal.obj"/>
+    <mesh name="link7-symp-mirrored-c00" file="meshes/link7-symp-mirrored-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link7-symp-mirrored-c01" file="meshes/link7-symp-mirrored-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link7-symp-mirrored-c02" file="meshes/link7-symp-mirrored-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link7-symp-mirrored-c03" file="meshes/link7-symp-mirrored-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link7-symp-mirrored-c04" file="meshes/link7-symp-mirrored-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link0-symp" file="meshes/link0-symp.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right-link1-color-cc1a14" file="meshes/right-link1-color-cc1a14.obj"/>
+    <mesh name="right-link1-color-f2b814" file="meshes/right-link1-color-f2b814.obj"/>
+    <mesh name="right-link1-frosted-white" file="meshes/right-link1-frosted-white.obj"/>
+    <mesh name="right-link1-matte-black" file="meshes/right-link1-matte-black.obj"/>
+    <mesh name="right-link1-sheet-metal" file="meshes/right-link1-sheet-metal.obj"/>
+    <mesh name="right-link1-steel-dark" file="meshes/right-link1-steel-dark.obj"/>
+    <mesh name="link1-symp" file="meshes/link1-symp.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right-link2-frosted-white" file="meshes/right-link2-frosted-white.obj"/>
+    <mesh name="right-link2-sheet-metal" file="meshes/right-link2-sheet-metal.obj"/>
+    <mesh name="link2-symp-c00" file="meshes/link2-symp-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c01" file="meshes/link2-symp-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c02" file="meshes/link2-symp-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c03" file="meshes/link2-symp-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c04" file="meshes/link2-symp-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c05" file="meshes/link2-symp-c05.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c06" file="meshes/link2-symp-c06.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c07" file="meshes/link2-symp-c07.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c08" file="meshes/link2-symp-c08.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c09" file="meshes/link2-symp-c09.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link2-symp-c10" file="meshes/link2-symp-c10.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right-link3-anodized-black" file="meshes/right-link3-anodized-black.obj"/>
+    <mesh name="right-link3-frosted-white" file="meshes/right-link3-frosted-white.obj"/>
+    <mesh name="right-link3-matte-black" file="meshes/right-link3-matte-black.obj"/>
+    <mesh name="right-link3-sheet-metal" file="meshes/right-link3-sheet-metal.obj"/>
+    <mesh name="right-link3-steel-dark" file="meshes/right-link3-steel-dark.obj"/>
+    <mesh name="link3-symp-c00" file="meshes/link3-symp-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-c01" file="meshes/link3-symp-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-c02" file="meshes/link3-symp-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-c03" file="meshes/link3-symp-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link3-symp-c04" file="meshes/link3-symp-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right-link4-frosted-white" file="meshes/right-link4-frosted-white.obj"/>
+    <mesh name="right-link4-matte-black" file="meshes/right-link4-matte-black.obj"/>
+    <mesh name="right-link4-sheet-metal" file="meshes/right-link4-sheet-metal.obj"/>
+    <mesh name="right-link4-stainless" file="meshes/right-link4-stainless.obj"/>
+    <mesh name="right-link4-steel-dark" file="meshes/right-link4-steel-dark.obj"/>
+    <mesh name="right-link5-matte-black" file="meshes/right-link5-matte-black.obj"/>
+    <mesh name="right-link5-sheet-metal" file="meshes/right-link5-sheet-metal.obj"/>
+    <mesh name="right-link5-steel-dark" file="meshes/right-link5-steel-dark.obj"/>
+    <mesh name="link5-symp-c00" file="meshes/link5-symp-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c01" file="meshes/link5-symp-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c02" file="meshes/link5-symp-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c03" file="meshes/link5-symp-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c04" file="meshes/link5-symp-c04.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c05" file="meshes/link5-symp-c05.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c06" file="meshes/link5-symp-c06.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c07" file="meshes/link5-symp-c07.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c08" file="meshes/link5-symp-c08.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c09" file="meshes/link5-symp-c09.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c10" file="meshes/link5-symp-c10.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link5-symp-c11" file="meshes/link5-symp-c11.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right-link6-matte-black" file="meshes/right-link6-matte-black.obj"/>
+    <mesh name="right-link6-sheet-metal" file="meshes/right-link6-sheet-metal.obj"/>
+    <mesh name="right-link6-steel-dark" file="meshes/right-link6-steel-dark.obj"/>
+    <mesh name="link6-symp" file="meshes/link6-symp.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="right-link6-crank-sheet-metal" file="meshes/right-link6-crank-sheet-metal.obj"/>
+    <mesh name="right-link6-crank-collision" file="meshes/right-link6-crank-collision.stl"/>
+    <mesh name="right-link6-bar-sheet-metal" file="meshes/right-link6-bar-sheet-metal.obj"/>
+    <mesh name="right-link6-bar-collision" file="meshes/right-link6-bar-collision.stl"/>
+    <mesh name="right-link7-sheet-metal" file="meshes/right-link7-sheet-metal.obj"/>
+    <mesh name="link7-symp-c00" file="meshes/link7-symp-c00.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link7-symp-c01" file="meshes/link7-symp-c01.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link7-symp-c02" file="meshes/link7-symp-c02.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="link7-symp-c03" file="meshes/link7-symp-c03.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="hand-anodized-black" file="meshes/hand-anodized-black.obj"/>
+    <mesh name="hand-camera-gray" file="meshes/hand-camera-gray.stl"/>
+    <mesh name="hand-collision-c00" file="meshes/hand-collision-c00.stl"/>
+    <mesh name="hand-collision-c01" file="meshes/hand-collision-c01.stl"/>
+    <mesh name="hand-collision-c02" file="meshes/hand-collision-c02.stl"/>
+    <mesh name="hand-collision-c03" file="meshes/hand-collision-c03.stl"/>
+    <mesh name="hand-body-collision-c00" file="meshes/hand-body-collision-c00.stl"/>
+    <mesh name="hand-body-collision-c01" file="meshes/hand-body-collision-c01.stl"/>
+    <mesh name="hand-body-collision-c02" file="meshes/hand-body-collision-c02.stl"/>
+    <mesh name="hand-body-collision-c03" file="meshes/hand-body-collision-c03.stl"/>
+    <mesh name="hand-body-collision-c04" file="meshes/hand-body-collision-c04.stl"/>
+    <mesh name="hand-body-collision-c05" file="meshes/hand-body-collision-c05.stl"/>
+    <mesh name="hand-body-collision-c06" file="meshes/hand-body-collision-c06.stl"/>
+    <mesh name="hand-body-collision-c07" file="meshes/hand-body-collision-c07.stl"/>
+    <mesh name="hand-body-collision-c08" file="meshes/hand-body-collision-c08.stl"/>
+    <mesh name="hand-body-collision-c09" file="meshes/hand-body-collision-c09.stl"/>
+    <mesh name="hand-body-collision-c10" file="meshes/hand-body-collision-c10.stl"/>
+    <mesh name="hand-body-collision-c11" file="meshes/hand-body-collision-c11.stl"/>
+    <mesh name="hand-camera-collision-c00" file="meshes/hand-camera-collision-c00.stl"/>
+    <mesh name="hand-camera-collision-c01" file="meshes/hand-camera-collision-c01.stl"/>
+    <mesh name="hand-camera-collision-c02" file="meshes/hand-camera-collision-c02.stl"/>
+    <mesh name="hand-camera-collision-c03" file="meshes/hand-camera-collision-c03.stl"/>
+    <mesh name="hand-camera-collision-c04" file="meshes/hand-camera-collision-c04.stl"/>
+    <mesh name="hand-camera-collision-c05" file="meshes/hand-camera-collision-c05.stl"/>
+    <mesh name="hand-camera-collision-c06" file="meshes/hand-camera-collision-c06.stl"/>
+    <mesh name="hand-camera-collision-c07" file="meshes/hand-camera-collision-c07.stl"/>
+    <mesh name="hand-camera-collision-c08" file="meshes/hand-camera-collision-c08.stl"/>
+    <mesh name="hand-camera-collision-c09" file="meshes/hand-camera-collision-c09.stl"/>
+    <mesh name="hand-camera-collision-c10" file="meshes/hand-camera-collision-c10.stl"/>
+    <mesh name="hand-camera-collision-c11" file="meshes/hand-camera-collision-c11.stl"/>
+    <mesh name="right-finger-dark" file="meshes/right-finger-dark.stl"/>
+    <mesh name="right-finger-fine-tip-dark" file="meshes/right-finger-fine-tip-dark.stl"/>
+    <mesh name="right-finger-collision-c00" file="meshes/right-finger-collision-c00.stl"/>
+    <mesh name="right-finger-collision-c01" file="meshes/right-finger-collision-c01.stl"/>
+    <mesh name="right-finger-collision-c02" file="meshes/right-finger-collision-c02.stl"/>
+    <mesh name="right-finger-collision-c03" file="meshes/right-finger-collision-c03.stl"/>
+    <mesh name="right-finger-collision-c04" file="meshes/right-finger-collision-c04.stl"/>
+    <mesh name="right-finger-collision-c05" file="meshes/right-finger-collision-c05.stl"/>
+    <mesh name="right-finger-collision-c06" file="meshes/right-finger-collision-c06.stl"/>
+    <mesh name="right-finger-collision-c07" file="meshes/right-finger-collision-c07.stl"/>
+    <mesh name="right-finger-collision-c08" file="meshes/right-finger-collision-c08.stl"/>
+    <mesh name="right-finger-collision-c09" file="meshes/right-finger-collision-c09.stl"/>
+    <mesh name="right-finger-collision-c10" file="meshes/right-finger-collision-c10.stl"/>
+    <mesh name="right-finger-collision-c11" file="meshes/right-finger-collision-c11.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c00" file="meshes/right-finger-fine-tip-collision-c00.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c01" file="meshes/right-finger-fine-tip-collision-c01.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c02" file="meshes/right-finger-fine-tip-collision-c02.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c03" file="meshes/right-finger-fine-tip-collision-c03.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c04" file="meshes/right-finger-fine-tip-collision-c04.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c05" file="meshes/right-finger-fine-tip-collision-c05.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c06" file="meshes/right-finger-fine-tip-collision-c06.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c07" file="meshes/right-finger-fine-tip-collision-c07.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c08" file="meshes/right-finger-fine-tip-collision-c08.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c09" file="meshes/right-finger-fine-tip-collision-c09.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c10" file="meshes/right-finger-fine-tip-collision-c10.stl"/>
+    <mesh name="right-finger-fine-tip-collision-c11" file="meshes/right-finger-fine-tip-collision-c11.stl"/>
+    <mesh name="left-finger-dark" file="meshes/left-finger-dark.stl"/>
+    <mesh name="left-finger-fine-tip-dark" file="meshes/left-finger-fine-tip-dark.stl"/>
+    <mesh name="left-finger-collision-c00" file="meshes/left-finger-collision-c00.stl"/>
+    <mesh name="left-finger-collision-c01" file="meshes/left-finger-collision-c01.stl"/>
+    <mesh name="left-finger-collision-c02" file="meshes/left-finger-collision-c02.stl"/>
+    <mesh name="left-finger-collision-c03" file="meshes/left-finger-collision-c03.stl"/>
+    <mesh name="left-finger-collision-c04" file="meshes/left-finger-collision-c04.stl"/>
+    <mesh name="left-finger-collision-c05" file="meshes/left-finger-collision-c05.stl"/>
+    <mesh name="left-finger-collision-c06" file="meshes/left-finger-collision-c06.stl"/>
+    <mesh name="left-finger-collision-c07" file="meshes/left-finger-collision-c07.stl"/>
+    <mesh name="left-finger-collision-c08" file="meshes/left-finger-collision-c08.stl"/>
+    <mesh name="left-finger-collision-c09" file="meshes/left-finger-collision-c09.stl"/>
+    <mesh name="left-finger-collision-c10" file="meshes/left-finger-collision-c10.stl"/>
+    <mesh name="left-finger-collision-c11" file="meshes/left-finger-collision-c11.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c00" file="meshes/left-finger-fine-tip-collision-c00.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c01" file="meshes/left-finger-fine-tip-collision-c01.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c02" file="meshes/left-finger-fine-tip-collision-c02.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c03" file="meshes/left-finger-fine-tip-collision-c03.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c04" file="meshes/left-finger-fine-tip-collision-c04.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c05" file="meshes/left-finger-fine-tip-collision-c05.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c06" file="meshes/left-finger-fine-tip-collision-c06.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c07" file="meshes/left-finger-fine-tip-collision-c07.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c08" file="meshes/left-finger-fine-tip-collision-c08.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c09" file="meshes/left-finger-fine-tip-collision-c09.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c10" file="meshes/left-finger-fine-tip-collision-c10.stl"/>
+    <mesh name="left-finger-fine-tip-collision-c11" file="meshes/left-finger-fine-tip-collision-c11.stl"/>
+  </asset>
+
+  <worldbody>
+    <body name="body_link0">
+      <inertial pos="0 0 0" mass="13.89" diaginertia="1.653 1.653 0.051"/>
+      <geom name="body_link0_aluminium_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.82 0.83 0.84 1" density="0" mesh="body-link0-aluminium"/>
+      <geom name="body_link0_aluminium_plate_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.76 0.77 0.78 1" density="0" mesh="body-link0-aluminium-plate"/>
+      <geom name="body_link0_anodized_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.11 0.11 0.115 1" density="0" mesh="body-link0-anodized-black"/>
+      <geom name="body_link0_color_cc1a14_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.8 0.1 0.08 1" density="0" mesh="body-link0-color-cc1a14"/>
+      <geom name="body_link0_color_f2b814_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.95 0.72 0.08 1" density="0" mesh="body-link0-color-f2b814"/>
+      <geom name="body_link0_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="body-link0-frosted-white"/>
+      <geom name="body_link0_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="body-link0-matte-black"/>
+      <geom name="body_link0_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="body-link0-sheet-metal"/>
+      <geom name="body_link0_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="body-link0-steel-dark"/>
+      <geom name="body_link0_zinc_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.68 0.69 0.7 1" density="0" mesh="body-link0-zinc"/>
+      <geom name="body_link0_collision_c00" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c00"/>
+      <geom name="body_link0_collision_c01" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c01"/>
+      <geom name="body_link0_collision_c02" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c02"/>
+      <geom name="body_link0_collision_c03" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c03"/>
+      <geom name="body_link0_collision_c04" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c04"/>
+      <geom name="body_link0_collision_c05" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c05"/>
+      <geom name="body_link0_collision_c06" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c06"/>
+      <geom name="body_link0_collision_c07" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c07"/>
+      <geom name="body_link0_collision_c08" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c08"/>
+      <geom name="body_link0_collision_c09" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c09"/>
+      <geom name="body_link0_collision_c10" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c10"/>
+      <geom name="body_link0_collision_c11" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-symp-c11"/>
+      <geom name="body_link0_chest_camera_collision" pos="-0.00541213 1.68947e-05 0.000892373" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-chest-camera-collision"/>
+      <geom name="body_link0_waist_camera_collision" pos="-0.00541213 1.68947e-05 0.000892373" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.68 0.69 0.7 1" mesh="body-link0-waist-camera-collision"/>
+      <body name="left_link0" pos="0 0.031 0.698" quat="0.707105 -0.707108 0 0">
+        <inertial pos="-0.000948336 -0.000158021 0.0307686" quat="0.479051 0.472241 -0.533622 0.512587" mass="1.14323" diaginertia="0.00147324 0.00112498 0.000961783"/>
+        <geom name="left_link0_collision" type="mesh" mesh="link0-symp-mirrored"/>
+        <body name="left_link1" pos="0 0 0.0625">
+          <inertial pos="0.00436843 0.00755705 0.0539528" quat="0.999653 0.00178277 0.0262159 -0.0018256" mass="1.14167" diaginertia="0.00156853 0.001273 0.00101447"/>
+          <joint name="left_joint_1" range="-2.4435 2.4435" actuatorfrcrange="-40 40" frictionloss="0.541"/>
+          <geom name="left_link1_color_cc1a14_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.8 0.1 0.08 1" density="0" mesh="left-link1-color-cc1a14"/>
+          <geom name="left_link1_color_f2b814_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.95 0.72 0.08 1" density="0" mesh="left-link1-color-f2b814"/>
+          <geom name="left_link1_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="left-link1-frosted-white"/>
+          <geom name="left_link1_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="left-link1-matte-black"/>
+          <geom name="left_link1_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link1-sheet-metal"/>
+          <geom name="left_link1_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="left-link1-steel-dark"/>
+          <geom name="left_link1_collision" pos="0 0 -0.0625" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link1-symp-mirrored"/>
+          <body name="left_link2" pos="-0.0301 0 0.06" quat="0.707107 -0.707107 0 0">
+            <inertial pos="0.0092036 0.00989413 0.0339683" quat="0.966167 0.00423302 0.257864 0.00305043" mass="0.276853" diaginertia="0.000420653 0.000375117 0.000168943"/>
+            <joint name="left_joint_2" range="-3.3161 0.1745" actuatorfrcrange="-40 40" frictionloss="0.541" axis="-1 0 0"/>
+            <geom name="left_link2_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="left-link2-frosted-white"/>
+            <geom name="left_link2_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link2-sheet-metal"/>
+            <geom name="left_link2_collision_c00" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c00"/>
+            <geom name="left_link2_collision_c01" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c01"/>
+            <geom name="left_link2_collision_c02" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c02"/>
+            <geom name="left_link2_collision_c03" pos="0.0301 0 -0.1225" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c03"/>
+            <geom name="left_link2_collision_c04" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c04"/>
+            <geom name="left_link2_collision_c05" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c05"/>
+            <geom name="left_link2_collision_c06" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c06"/>
+            <geom name="left_link2_collision_c07" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c07"/>
+            <geom name="left_link2_collision_c08" pos="0.0301 0 -0.1225" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c08"/>
+            <geom name="left_link2_collision_c09" pos="0.0301 0 -0.1225" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c09"/>
+            <geom name="left_link2_collision_c10" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c10"/>
+            <geom name="left_link2_collision_c11" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-mirrored-c11"/>
+            <body name="left_link3" pos="0.0301 0 0.06625">
+              <inertial pos="-0.0118641 0.00792817 0.0924755" quat="0.999951 -0.00493242 -0.00144149 0.00846656" mass="1.11061" diaginertia="0.00452167 0.00446715 0.00068322"/>
+              <joint name="left_joint_3" range="-1.5708 1.5708" actuatorfrcrange="-27 27" frictionloss="0.411"/>
+              <geom name="left_link3_anodized_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.11 0.11 0.115 1" density="0" mesh="left-link3-anodized-black"/>
+              <geom name="left_link3_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="left-link3-frosted-white"/>
+              <geom name="left_link3_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="left-link3-matte-black"/>
+              <geom name="left_link3_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link3-sheet-metal"/>
+              <geom name="left_link3_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="left-link3-steel-dark"/>
+              <geom name="left_link3_collision_c00" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-mirrored-c00"/>
+              <geom name="left_link3_collision_c01" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-mirrored-c01"/>
+              <geom name="left_link3_collision_c02" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-mirrored-c02"/>
+              <geom name="left_link3_collision_c03" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-mirrored-c03"/>
+              <geom name="left_link3_collision_c04" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-mirrored-c04"/>
+              <body name="left_link4" pos="0 0.0315 0.15375">
+                <inertial pos="-0.0183701 -0.0231485 0.0521686" quat="0.994282 0.0996875 0.0329727 -0.0194357" mass="0.688238" diaginertia="0.000676857 0.000562204 0.000352382"/>
+                <joint name="left_joint_4" range="0 2.44346" actuatorfrcrange="-27 27" frictionloss="1.09" axis="0 1 0"/>
+                <geom name="left_link4_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="left-link4-frosted-white"/>
+                <geom name="left_link4_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="left-link4-matte-black"/>
+                <geom name="left_link4_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link4-sheet-metal"/>
+                <geom name="left_link4_stainless_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.62 0.63 0.64 1" density="0" mesh="left-link4-stainless"/>
+                <geom name="left_link4_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="left-link4-steel-dark"/>
+                <geom name="left_link4_collision_c00" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c00"/>
+                <geom name="left_link4_collision_c01" pos="0 -0.0315 -0.3425" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c01"/>
+                <geom name="left_link4_collision_c02" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c02"/>
+                <geom name="left_link4_collision_c03" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c03"/>
+                <geom name="left_link4_collision_c04" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c04"/>
+                <geom name="left_link4_collision_c05" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c05"/>
+                <geom name="left_link4_collision_c06" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c06"/>
+                <geom name="left_link4_collision_c07" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c07"/>
+                <geom name="left_link4_collision_c08" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c08"/>
+                <geom name="left_link4_collision_c09" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c09"/>
+                <geom name="left_link4_collision_c10" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c10"/>
+                <geom name="left_link4_collision_c11" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c11"/>
+                <body name="left_link5" pos="0 -0.0315 0.0955">
+                  <inertial pos="-0.00549826 0.0155214 0.0366082" quat="0.583365 -0.0362073 0.00200369 0.8114" mass="0.611062" diaginertia="0.000444719 0.000417409 0.000320971"/>
+                  <joint name="left_joint_5" range="-1.5708 1.5708" actuatorfrcrange="-7 7" frictionloss="0.125"/>
+                  <geom name="left_link5_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="left-link5-matte-black"/>
+                  <geom name="left_link5_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link5-sheet-metal"/>
+                  <geom name="left_link5_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="left-link5-steel-dark"/>
+                  <geom name="left_link5_collision_c00" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c00"/>
+                  <geom name="left_link5_collision_c01" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c01"/>
+                  <geom name="left_link5_collision_c02" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c02"/>
+                  <geom name="left_link5_collision_c03" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c03"/>
+                  <geom name="left_link5_collision_c04" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c04"/>
+                  <geom name="left_link5_collision_c05" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c05"/>
+                  <geom name="left_link5_collision_c06" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c06"/>
+                  <geom name="left_link5_collision_c07" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c07"/>
+                  <geom name="left_link5_collision_c08" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c08"/>
+                  <geom name="left_link5_collision_c09" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c09"/>
+                  <geom name="left_link5_collision_c10" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c10"/>
+                  <geom name="left_link5_collision_c11" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-mirrored-c11"/>
+                  <body name="left_link6" pos="0 0 0.1205" quat="0.707105 0 0 0.707108">
+                    <inertial pos="-0.0257982 0.000142648 0.0105785" quat="0.162317 0.716459 0.124556 0.666952" mass="0.439861" diaginertia="0.000147655 0.00014496 0.00013225"/>
+                    <joint name="left_joint_6" range="-0.785398 1.22173" actuatorfrcrange="-7 7" frictionloss="0.126" axis="1 0 0"/>
+                    <geom name="left_link6_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="left-link6-matte-black"/>
+                    <geom name="left_link6_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link6-sheet-metal"/>
+                    <geom name="left_link6_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="left-link6-steel-dark"/>
+                    <geom name="left_link6_collision" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link6-symp-mirrored"/>
+                    <body name="left_link7">
+                      <inertial pos="-0.00385642 -0.0111856 -0.0734207" quat="0.977257 0.211955 -0.00210062 0.00621971" mass="0.255198" diaginertia="0.000448775 0.000377477 0.000211729"/>
+                      <joint name="left_joint_7" range="-1.5708 1.5708" actuatorfrcrange="-7 7" frictionloss="0.0968" axis="0 -1 0"/>
+                      <geom name="left_link7_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link7-sheet-metal"/>
+                      <geom name="left_link7_collision_c00" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-mirrored-c00"/>
+                      <geom name="left_link7_collision_c01" pos="0 0 -0.5585" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-mirrored-c01"/>
+                      <geom name="left_link7_collision_c02" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-mirrored-c02"/>
+                      <geom name="left_link7_collision_c03" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-mirrored-c03"/>
+                      <geom name="left_link7_collision_c04" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-mirrored-c04"/>
+                      <body name="left_hand" pos="0 0 0.1001" quat="0.707105 0 0 -0.707108">
+                        <inertial pos="0 0.002 0.03" quat="0.547194 0.546814 -0.44595 0.450224" mass="0.7" diaginertia="0.000252306 0.000247103 1.76214e-05"/>
+                        <geom name="left_hand_anodized_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.11 0.11 0.115 1" density="0" mesh="hand-anodized-black"/>
+                        <geom name="left_hand_camera_gray_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.686275 0.686275 0.686275 1" density="0" mesh="hand-camera-gray"/>
+                        <geom name="left_hand_collision_c00" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c00"/>
+                        <geom name="left_hand_collision_c01" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c01"/>
+                        <geom name="left_hand_collision_c02" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c02"/>
+                        <geom name="left_hand_collision_c03" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c03"/>
+                        <geom name="left_hand_body_collision_c00" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c00"/>
+                        <geom name="left_hand_body_collision_c01" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c01"/>
+                        <geom name="left_hand_body_collision_c02" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c02"/>
+                        <geom name="left_hand_body_collision_c03" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c03"/>
+                        <geom name="left_hand_body_collision_c04" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c04"/>
+                        <geom name="left_hand_body_collision_c05" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c05"/>
+                        <geom name="left_hand_body_collision_c06" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c06"/>
+                        <geom name="left_hand_body_collision_c07" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c07"/>
+                        <geom name="left_hand_body_collision_c08" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c08"/>
+                        <geom name="left_hand_body_collision_c09" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c09"/>
+                        <geom name="left_hand_body_collision_c10" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c10"/>
+                        <geom name="left_hand_body_collision_c11" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c11"/>
+                        <geom name="left_hand_camera_collision_c00" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c00"/>
+                        <geom name="left_hand_camera_collision_c01" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c01"/>
+                        <geom name="left_hand_camera_collision_c02" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c02"/>
+                        <geom name="left_hand_camera_collision_c03" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c03"/>
+                        <geom name="left_hand_camera_collision_c04" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c04"/>
+                        <geom name="left_hand_camera_collision_c05" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c05"/>
+                        <geom name="left_hand_camera_collision_c06" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c06"/>
+                        <geom name="left_hand_camera_collision_c07" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c07"/>
+                        <geom name="left_hand_camera_collision_c08" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c08"/>
+                        <geom name="left_hand_camera_collision_c09" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c09"/>
+                        <geom name="left_hand_camera_collision_c10" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c10"/>
+                        <geom name="left_hand_camera_collision_c11" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c11"/>
+                        <body name="left_wrist_cam" pos="0.074 0.001 0.009" quat="0.647724 -0.283641 -0.283642 0.647726">
+                          <camera name="left_wrist_cam" quat="0 1 0 0" resolution="1920 1080" fovy="79.2444"/>
+                        </body>
+                        <body name="left_right_finger" pos="0 -0.006 0.015">
+                          <inertial pos="0.0064528 -0.01702 0.0219685" quat="0.653657 -0.244104 -0.0294998 0.715734" mass="0.0360255" diaginertia="2.08878e-05 1.56498e-05 7.58947e-06"/>
+                          <joint name="left_finger_joint1" type="slide" range="0 0.05" actuatorfrcrange="-10 10" damping="60.5" frictionloss="9.26" axis="0 -1 0"/>
+                          <geom name="left_right_finger_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="right-finger-dark"/>
+                          <geom name="left_right_finger_fine_tip_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="right-finger-fine-tip-dark"/>
+                          <geom name="left_right_finger_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c00"/>
+                          <geom name="left_right_finger_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c01"/>
+                          <geom name="left_right_finger_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c02"/>
+                          <geom name="left_right_finger_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c03"/>
+                          <geom name="left_right_finger_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c04"/>
+                          <geom name="left_right_finger_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c05"/>
+                          <geom name="left_right_finger_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c06"/>
+                          <geom name="left_right_finger_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c07"/>
+                          <geom name="left_right_finger_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c08"/>
+                          <geom name="left_right_finger_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c09"/>
+                          <geom name="left_right_finger_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c10"/>
+                          <geom name="left_right_finger_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c11"/>
+                          <geom name="left_right_finger_fine_tip_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c00"/>
+                          <geom name="left_right_finger_fine_tip_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c01"/>
+                          <geom name="left_right_finger_fine_tip_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c02"/>
+                          <geom name="left_right_finger_fine_tip_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c03"/>
+                          <geom name="left_right_finger_fine_tip_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c04"/>
+                          <geom name="left_right_finger_fine_tip_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c05"/>
+                          <geom name="left_right_finger_fine_tip_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c06"/>
+                          <geom name="left_right_finger_fine_tip_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c07"/>
+                          <geom name="left_right_finger_fine_tip_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c08"/>
+                          <geom name="left_right_finger_fine_tip_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c09"/>
+                          <geom name="left_right_finger_fine_tip_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c10"/>
+                          <geom name="left_right_finger_fine_tip_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c11"/>
+                        </body>
+                        <body name="left_left_finger" pos="0 0.006 0.015">
+                          <inertial pos="0.0064528 0.01702 0.0219685" quat="0.709123 -0.0179353 -0.232818 0.665296" mass="0.0360255" diaginertia="2.07846e-05 1.54113e-05 7.7411e-06"/>
+                          <joint name="left_finger_joint2" type="slide" range="0 0.05" actuatorfrcrange="-10 10" axis="0 1 0"/>
+                          <geom name="left_left_finger_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="left-finger-dark"/>
+                          <geom name="left_left_finger_fine_tip_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="left-finger-fine-tip-dark"/>
+                          <geom name="left_left_finger_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c00"/>
+                          <geom name="left_left_finger_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c01"/>
+                          <geom name="left_left_finger_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c02"/>
+                          <geom name="left_left_finger_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c03"/>
+                          <geom name="left_left_finger_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c04"/>
+                          <geom name="left_left_finger_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c05"/>
+                          <geom name="left_left_finger_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c06"/>
+                          <geom name="left_left_finger_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c07"/>
+                          <geom name="left_left_finger_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c08"/>
+                          <geom name="left_left_finger_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c09"/>
+                          <geom name="left_left_finger_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c10"/>
+                          <geom name="left_left_finger_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c11"/>
+                          <geom name="left_left_finger_fine_tip_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c00"/>
+                          <geom name="left_left_finger_fine_tip_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c01"/>
+                          <geom name="left_left_finger_fine_tip_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c02"/>
+                          <geom name="left_left_finger_fine_tip_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c03"/>
+                          <geom name="left_left_finger_fine_tip_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c04"/>
+                          <geom name="left_left_finger_fine_tip_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c05"/>
+                          <geom name="left_left_finger_fine_tip_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c06"/>
+                          <geom name="left_left_finger_fine_tip_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c07"/>
+                          <geom name="left_left_finger_fine_tip_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c08"/>
+                          <geom name="left_left_finger_fine_tip_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c09"/>
+                          <geom name="left_left_finger_fine_tip_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c10"/>
+                          <geom name="left_left_finger_fine_tip_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c11"/>
+                        </body>
+                        <body name="left_hand_tcp" pos="0 0 0.08"/>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="left_link6_crank" pos="-0.0007696 -0.0048124 0.045137" quat="1.7949e-09 1 0 0">
+                    <inertial pos="-0.0134918 -0.0253975 0" quat="0.485992 0.485992 0.513626 0.513626" mass="0.0001" diaginertia="4.01058e-08 3.51283e-08 5.99191e-09"/>
+                    <joint name="left_link6_crank_joint" range="-3.14159 3.14159" axis="0 -1 0"/>
+                    <geom name="left_link6_crank_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link6-crank-sheet-metal"/>
+                    <geom name="left_link6_crank_collision" type="mesh" rgba="0.88 0.89 0.9 1" mesh="left-link6-crank-collision"/>
+                    <body name="left_link6_bar" pos="-0.039495 -0.028875 0">
+                      <inertial pos="-0.0141603 -0.00210718 -0.0353987" quat="0.704793 -0.0172223 0.0220157 0.708863" mass="0.0001" diaginertia="8.88501e-08 8.23525e-08 6.9261e-09"/>
+                      <joint name="left_link6_bar_joint" range="-3.14159 3.14159" axis="0 -1 0"/>
+                      <geom name="left_link6_bar_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="left-link6-bar-sheet-metal"/>
+                      <geom name="left_link6_bar_collision" type="mesh" rgba="0.88 0.89 0.9 1" mesh="left-link6-bar-collision"/>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="right_link0" pos="0 -0.031 0.698" quat="0.707105 0.707108 0 0">
+        <inertial pos="-0.000948336 0.000158021 0.0307686" quat="0.479051 0.472241 -0.533622 0.512587" mass="1.14323" diaginertia="0.00147324 0.00112498 0.000961783"/>
+        <geom name="right_link0_collision" type="mesh" mesh="link0-symp"/>
+        <body name="right_link1" pos="0 0 0.0625">
+          <inertial pos="0.00479006 -0.00146604 0.0539528" quat="0.999653 0.00178277 0.0262159 -0.0018256" mass="1.14167" diaginertia="0.00156853 0.001273 0.00101447"/>
+          <joint name="right_joint_1" range="-2.4435 2.4435" actuatorfrcrange="-40 40" frictionloss="0.491"/>
+          <geom name="right_link1_color_cc1a14_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.8 0.1 0.08 1" density="0" mesh="right-link1-color-cc1a14"/>
+          <geom name="right_link1_color_f2b814_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.95 0.72 0.08 1" density="0" mesh="right-link1-color-f2b814"/>
+          <geom name="right_link1_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="right-link1-frosted-white"/>
+          <geom name="right_link1_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="right-link1-matte-black"/>
+          <geom name="right_link1_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link1-sheet-metal"/>
+          <geom name="right_link1_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="right-link1-steel-dark"/>
+          <geom name="right_link1_collision" pos="0 0 -0.0625" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link1-symp"/>
+          <body name="right_link2" pos="-0.0301 0 0.06" quat="0.707107 0.707107 0 0">
+            <inertial pos="0.00933735 -0.00996036 0.0350325" quat="0.966167 0.00423304 0.257863 0.00305056" mass="0.276745" diaginertia="0.000420488 0.000374971 0.000168877"/>
+            <joint name="right_joint_2" range="-0.1745 3.3161" actuatorfrcrange="-40 40" frictionloss="0.54" axis="-1 0 0"/>
+            <geom name="right_link2_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="right-link2-frosted-white"/>
+            <geom name="right_link2_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link2-sheet-metal"/>
+            <geom name="right_link2_collision_c00" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c00"/>
+            <geom name="right_link2_collision_c01" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c01"/>
+            <geom name="right_link2_collision_c02" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c02"/>
+            <geom name="right_link2_collision_c03" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c03"/>
+            <geom name="right_link2_collision_c04" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c04"/>
+            <geom name="right_link2_collision_c05" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c05"/>
+            <geom name="right_link2_collision_c06" pos="0.0301 0 -0.1225" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c06"/>
+            <geom name="right_link2_collision_c07" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c07"/>
+            <geom name="right_link2_collision_c08" pos="0.0301 0 -0.1225" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c08"/>
+            <geom name="right_link2_collision_c09" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c09"/>
+            <geom name="right_link2_collision_c10" pos="0.0301 0 -0.1225" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link2-symp-c10"/>
+            <body name="right_link3" pos="0.0301 0 0.06625">
+              <inertial pos="0.00330603 -0.00182257 0.0933829" quat="0.999951 -0.00493243 -0.00144148 0.00846869" mass="1.12812" diaginertia="0.00459294 0.00453758 0.00069399"/>
+              <joint name="right_joint_3" range="-1.5708 1.5708" actuatorfrcrange="-27 27" frictionloss="0.379"/>
+              <geom name="right_link3_anodized_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.11 0.11 0.115 1" density="0" mesh="right-link3-anodized-black"/>
+              <geom name="right_link3_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="right-link3-frosted-white"/>
+              <geom name="right_link3_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="right-link3-matte-black"/>
+              <geom name="right_link3_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link3-sheet-metal"/>
+              <geom name="right_link3_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="right-link3-steel-dark"/>
+              <geom name="right_link3_collision_c00" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-c00"/>
+              <geom name="right_link3_collision_c01" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-c01"/>
+              <geom name="right_link3_collision_c02" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-c02"/>
+              <geom name="right_link3_collision_c03" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-c03"/>
+              <geom name="right_link3_collision_c04" pos="0 0 -0.18875" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link3-symp-c04"/>
+              <body name="right_link4" pos="0 0.0315 0.15375">
+                <inertial pos="0.00288264 -0.0291316 0.0505274" quat="0.994282 0.0996869 0.0329726 -0.0194356" mass="0.686544" diaginertia="0.000675192 0.000560821 0.000351514"/>
+                <joint name="right_joint_4" range="0 2.44346" actuatorfrcrange="-27 27" frictionloss="1.2" axis="0 1 0"/>
+                <geom name="right_link4_frosted_white_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.74 0.79 0.86 0.86" density="0" mesh="right-link4-frosted-white"/>
+                <geom name="right_link4_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="right-link4-matte-black"/>
+                <geom name="right_link4_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link4-sheet-metal"/>
+                <geom name="right_link4_stainless_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.62 0.63 0.64 1" density="0" mesh="right-link4-stainless"/>
+                <geom name="right_link4_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="right-link4-steel-dark"/>
+                <geom name="right_link4_collision_c00" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c00"/>
+                <geom name="right_link4_collision_c01" pos="0 -0.0315 -0.3425" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c01"/>
+                <geom name="right_link4_collision_c02" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c02"/>
+                <geom name="right_link4_collision_c03" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c03"/>
+                <geom name="right_link4_collision_c04" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c04"/>
+                <geom name="right_link4_collision_c05" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c05"/>
+                <geom name="right_link4_collision_c06" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c06"/>
+                <geom name="right_link4_collision_c07" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c07"/>
+                <geom name="right_link4_collision_c08" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c08"/>
+                <geom name="right_link4_collision_c09" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c09"/>
+                <geom name="right_link4_collision_c10" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c10"/>
+                <geom name="right_link4_collision_c11" pos="0 -0.0315 -0.3425" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link4-symp-c11"/>
+                <body name="right_link5" pos="0 -0.0315 0.0955">
+                  <inertial pos="-0.0078404 -0.0193602 0.0352585" quat="0.583364 -0.0362075 0.00200369 0.811401" mass="0.610867" diaginertia="0.000444577 0.000417276 0.00032087"/>
+                  <joint name="right_joint_5" range="-1.5708 1.5708" actuatorfrcrange="-7 7" frictionloss="0.109"/>
+                  <geom name="right_link5_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="right-link5-matte-black"/>
+                  <geom name="right_link5_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link5-sheet-metal"/>
+                  <geom name="right_link5_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="right-link5-steel-dark"/>
+                  <geom name="right_link5_collision_c00" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c00"/>
+                  <geom name="right_link5_collision_c01" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c01"/>
+                  <geom name="right_link5_collision_c02" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c02"/>
+                  <geom name="right_link5_collision_c03" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c03"/>
+                  <geom name="right_link5_collision_c04" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c04"/>
+                  <geom name="right_link5_collision_c05" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c05"/>
+                  <geom name="right_link5_collision_c06" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c06"/>
+                  <geom name="right_link5_collision_c07" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c07"/>
+                  <geom name="right_link5_collision_c08" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c08"/>
+                  <geom name="right_link5_collision_c09" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c09"/>
+                  <geom name="right_link5_collision_c10" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c10"/>
+                  <geom name="right_link5_collision_c11" pos="0 0 -0.438" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link5-symp-c11"/>
+                  <body name="right_link6" pos="0 0 0.1205" quat="0.707105 0 0 -0.707108">
+                    <inertial pos="-0.023576 0.00169956 -0.00590552" quat="0.162279 0.716466 0.124515 0.666962" mass="0.436337" diaginertia="0.000146472 0.000143798 0.00013119"/>
+                    <joint name="right_joint_6" range="-1.22173 0.785398" actuatorfrcrange="-7 7" frictionloss="0.142" axis="1 0 0"/>
+                    <geom name="right_link6_matte_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.1 0.1 0.1 1" density="0" mesh="right-link6-matte-black"/>
+                    <geom name="right_link6_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link6-sheet-metal"/>
+                    <geom name="right_link6_steel_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.3 0.3 0.31 1" density="0" mesh="right-link6-steel-dark"/>
+                    <geom name="right_link6_collision" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.3 0.3 0.31 1" mesh="link6-symp"/>
+                    <body name="right_link7">
+                      <inertial pos="0.00965014 0.0284838 -0.0809481" quat="0.977257 0.211956 -0.00210063 0.00621972" mass="0.235558" diaginertia="0.00042184 0.000354821 0.000199022"/>
+                      <joint name="right_joint_7" range="-1.5708 1.5708" actuatorfrcrange="-7 7" frictionloss="0.119" axis="0 1 0"/>
+                      <geom name="right_link7_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link7-sheet-metal"/>
+                      <geom name="right_link7_collision_c00" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-c00"/>
+                      <geom name="right_link7_collision_c01" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-c01"/>
+                      <geom name="right_link7_collision_c02" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-c02"/>
+                      <geom name="right_link7_collision_c03" pos="0 0 -0.5585" quat="1 0 0 0" type="mesh" rgba="0.88 0.89 0.9 1" mesh="link7-symp-c03"/>
+                      <body name="right_hand" pos="0 0 0.1001" quat="0.707105 0 0 0.707108">
+                        <inertial pos="0 0.002 0.03" quat="0.547194 0.546814 -0.44595 0.450224" mass="0.7" diaginertia="0.000252306 0.000247103 1.76214e-05"/>
+                        <geom name="right_hand_anodized_black_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.11 0.11 0.115 1" density="0" mesh="hand-anodized-black"/>
+                        <geom name="right_hand_camera_gray_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.686275 0.686275 0.686275 1" density="0" mesh="hand-camera-gray"/>
+                        <geom name="right_hand_collision_c00" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c00"/>
+                        <geom name="right_hand_collision_c01" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c01"/>
+                        <geom name="right_hand_collision_c02" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c02"/>
+                        <geom name="right_hand_collision_c03" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-collision-c03"/>
+                        <geom name="right_hand_body_collision_c00" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c00"/>
+                        <geom name="right_hand_body_collision_c01" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c01"/>
+                        <geom name="right_hand_body_collision_c02" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c02"/>
+                        <geom name="right_hand_body_collision_c03" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c03"/>
+                        <geom name="right_hand_body_collision_c04" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c04"/>
+                        <geom name="right_hand_body_collision_c05" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c05"/>
+                        <geom name="right_hand_body_collision_c06" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c06"/>
+                        <geom name="right_hand_body_collision_c07" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c07"/>
+                        <geom name="right_hand_body_collision_c08" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c08"/>
+                        <geom name="right_hand_body_collision_c09" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c09"/>
+                        <geom name="right_hand_body_collision_c10" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c10"/>
+                        <geom name="right_hand_body_collision_c11" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-body-collision-c11"/>
+                        <geom name="right_hand_camera_collision_c00" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c00"/>
+                        <geom name="right_hand_camera_collision_c01" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c01"/>
+                        <geom name="right_hand_camera_collision_c02" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c02"/>
+                        <geom name="right_hand_camera_collision_c03" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c03"/>
+                        <geom name="right_hand_camera_collision_c04" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c04"/>
+                        <geom name="right_hand_camera_collision_c05" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c05"/>
+                        <geom name="right_hand_camera_collision_c06" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c06"/>
+                        <geom name="right_hand_camera_collision_c07" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c07"/>
+                        <geom name="right_hand_camera_collision_c08" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c08"/>
+                        <geom name="right_hand_camera_collision_c09" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c09"/>
+                        <geom name="right_hand_camera_collision_c10" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c10"/>
+                        <geom name="right_hand_camera_collision_c11" type="mesh" rgba="0.686275 0.686275 0.686275 1" mesh="hand-camera-collision-c11"/>
+                        <body name="right_wrist_cam" pos="0.074 0.001 0.009" quat="0.647724 -0.283641 -0.283642 0.647726">
+                          <camera name="right_wrist_cam" quat="0 1 0 0" resolution="1920 1080" fovy="79.2444"/>
+                        </body>
+                        <body name="right_right_finger" pos="0 -0.006 0.015">
+                          <inertial pos="0.0064528 -0.01702 0.0219685" quat="0.653657 -0.244104 -0.0294998 0.715734" mass="0.0360255" diaginertia="2.08878e-05 1.56498e-05 7.58947e-06"/>
+                          <joint name="right_finger_joint1" type="slide" range="0 0.05" actuatorfrcrange="-10 10" damping="60.5" frictionloss="9.26" axis="0 -1 0"/>
+                          <geom name="right_right_finger_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="right-finger-dark"/>
+                          <geom name="right_right_finger_fine_tip_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="right-finger-fine-tip-dark"/>
+                          <geom name="right_right_finger_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c00"/>
+                          <geom name="right_right_finger_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c01"/>
+                          <geom name="right_right_finger_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c02"/>
+                          <geom name="right_right_finger_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c03"/>
+                          <geom name="right_right_finger_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c04"/>
+                          <geom name="right_right_finger_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c05"/>
+                          <geom name="right_right_finger_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c06"/>
+                          <geom name="right_right_finger_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c07"/>
+                          <geom name="right_right_finger_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c08"/>
+                          <geom name="right_right_finger_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c09"/>
+                          <geom name="right_right_finger_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c10"/>
+                          <geom name="right_right_finger_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-collision-c11"/>
+                          <geom name="right_right_finger_fine_tip_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c00"/>
+                          <geom name="right_right_finger_fine_tip_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c01"/>
+                          <geom name="right_right_finger_fine_tip_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c02"/>
+                          <geom name="right_right_finger_fine_tip_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c03"/>
+                          <geom name="right_right_finger_fine_tip_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c04"/>
+                          <geom name="right_right_finger_fine_tip_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c05"/>
+                          <geom name="right_right_finger_fine_tip_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c06"/>
+                          <geom name="right_right_finger_fine_tip_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c07"/>
+                          <geom name="right_right_finger_fine_tip_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c08"/>
+                          <geom name="right_right_finger_fine_tip_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c09"/>
+                          <geom name="right_right_finger_fine_tip_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c10"/>
+                          <geom name="right_right_finger_fine_tip_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="right-finger-fine-tip-collision-c11"/>
+                        </body>
+                        <body name="right_left_finger" pos="0 0.006 0.015">
+                          <inertial pos="0.0064528 0.01702 0.0219685" quat="0.709123 -0.0179353 -0.232818 0.665296" mass="0.0360255" diaginertia="2.07846e-05 1.54113e-05 7.7411e-06"/>
+                          <joint name="right_finger_joint2" type="slide" range="0 0.05" actuatorfrcrange="-10 10" axis="0 1 0"/>
+                          <geom name="right_left_finger_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="left-finger-dark"/>
+                          <geom name="right_left_finger_fine_tip_dark_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.235294 0.235294 0.235294 1" density="0" mesh="left-finger-fine-tip-dark"/>
+                          <geom name="right_left_finger_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c00"/>
+                          <geom name="right_left_finger_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c01"/>
+                          <geom name="right_left_finger_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c02"/>
+                          <geom name="right_left_finger_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c03"/>
+                          <geom name="right_left_finger_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c04"/>
+                          <geom name="right_left_finger_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c05"/>
+                          <geom name="right_left_finger_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c06"/>
+                          <geom name="right_left_finger_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c07"/>
+                          <geom name="right_left_finger_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c08"/>
+                          <geom name="right_left_finger_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c09"/>
+                          <geom name="right_left_finger_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c10"/>
+                          <geom name="right_left_finger_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-collision-c11"/>
+                          <geom name="right_left_finger_fine_tip_collision_c00" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c00"/>
+                          <geom name="right_left_finger_fine_tip_collision_c01" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c01"/>
+                          <geom name="right_left_finger_fine_tip_collision_c02" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c02"/>
+                          <geom name="right_left_finger_fine_tip_collision_c03" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c03"/>
+                          <geom name="right_left_finger_fine_tip_collision_c04" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c04"/>
+                          <geom name="right_left_finger_fine_tip_collision_c05" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c05"/>
+                          <geom name="right_left_finger_fine_tip_collision_c06" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c06"/>
+                          <geom name="right_left_finger_fine_tip_collision_c07" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c07"/>
+                          <geom name="right_left_finger_fine_tip_collision_c08" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c08"/>
+                          <geom name="right_left_finger_fine_tip_collision_c09" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c09"/>
+                          <geom name="right_left_finger_fine_tip_collision_c10" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c10"/>
+                          <geom name="right_left_finger_fine_tip_collision_c11" type="mesh" rgba="0.235294 0.235294 0.235294 1" mesh="left-finger-fine-tip-collision-c11"/>
+                        </body>
+                        <body name="right_hand_tcp" pos="0 0 0.08"/>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="right_link6_crank" pos="0.0002 0.0046504 0.045137" quat="1.7949e-09 1 0 0">
+                    <inertial pos="-0.0134925 0.0253976 0" quat="0.513627 0.513627 0.485991 0.485991" mass="0.0001" diaginertia="4.01092e-08 3.5132e-08 5.99184e-09"/>
+                    <joint name="right_link6_crank_joint" range="-3.14159 3.14159" axis="0 1 0"/>
+                    <geom name="right_link6_crank_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link6-crank-sheet-metal"/>
+                    <geom name="right_link6_crank_collision" type="mesh" rgba="0.88 0.89 0.9 1" mesh="right-link6-crank-collision"/>
+                    <body name="right_link6_bar" pos="-0.0395 0.028875 0">
+                      <inertial pos="-0.0141409 0.00210604 -0.0353854" quat="0.708858 0.0219364 -0.0172988 0.704797" mass="0.0001" diaginertia="8.90224e-08 8.25208e-08 6.93106e-09"/>
+                      <joint name="right_link6_bar_joint" range="-3.14159 3.14159" axis="0 1 0"/>
+                      <geom name="right_link6_bar_sheet_metal_visual" type="mesh" contype="0" conaffinity="0" group="1" rgba="0.88 0.89 0.9 1" density="0" mesh="right-link6-bar-sheet-metal"/>
+                      <geom name="right_link6_bar_collision" type="mesh" rgba="0.88 0.89 0.9 1" mesh="right-link6-bar-collision"/>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="waist_cam" pos="0.0827 0 0.3898" quat="0.499998 -0.5 0.500002 -0.5">
+        <camera name="waist_cam" quat="0 1 0 0" resolution="1920 1080" fovy="79.2444"/>
+      </body>
+      <body name="chest_cam" pos="0.0888 0 0.6231" quat="0.254544 -0.659701 0.659704 -0.254545">
+        <camera name="chest_cam" quat="0 1 0 0" resolution="1920 1080" fovy="79.2444"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude name="left_link6_bar_left_link5" body1="left_link5" body2="left_link6_bar"/>
+    <exclude name="left_link6_crank_left_link6" body1="left_link6" body2="left_link6_crank"/>
+    <exclude name="left_link6_bar_left_link6" body1="left_link6" body2="left_link6_bar"/>
+    <exclude name="left_link6_crank_left_link7" body1="left_link7" body2="left_link6_crank"/>
+    <exclude name="left_link6_bar_left_link7" body1="left_link7" body2="left_link6_bar"/>
+    <exclude name="left_left_finger_left_right_finger" body1="left_right_finger" body2="left_left_finger"/>
+    <exclude name="right_link6_bar_right_link5" body1="right_link5" body2="right_link6_bar"/>
+    <exclude name="right_link6_crank_right_link6" body1="right_link6" body2="right_link6_crank"/>
+    <exclude name="right_link6_bar_right_link6" body1="right_link6" body2="right_link6_bar"/>
+    <exclude name="right_link6_crank_right_link7" body1="right_link7" body2="right_link6_crank"/>
+    <exclude name="right_link6_bar_right_link7" body1="right_link7" body2="right_link6_bar"/>
+    <exclude name="right_left_finger_right_right_finger" body1="right_right_finger" body2="right_left_finger"/>
+  </contact>
+
+  <equality>
+    <joint joint1="left_link6_crank_joint" joint2="left_joint_6"/>
+    <joint joint1="left_link6_bar_joint" joint2="left_joint_6" polycoef="0 -1 0 0 0"/>
+    <joint joint1="right_link6_crank_joint" joint2="right_joint_6"/>
+    <joint joint1="right_link6_bar_joint" joint2="right_joint_6" polycoef="0 -1 0 0 0"/>
+    <joint joint1="left_finger_joint2" joint2="left_finger_joint1"/>
+    <joint joint1="right_finger_joint2" joint2="right_finger_joint1"/>
+  </equality>
+</mujoco>

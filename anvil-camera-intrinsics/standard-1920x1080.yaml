@@ -1,0 +1,20 @@
+image_width: 1920
+image_height: 1080
+camera_name: standard
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [651.917, 0, 977.454, 0, 652.233, 561.954, 0, 0, 1]
+distortion_model: equidistant
+distortion_coefficients:
+  rows: 1
+  cols: 4
+  data: [0.332533, 0.107706, 0.0281643, 0.0126473]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [651.917, 0, 977.454, 0, 0, 652.233, 561.954, 0, 0, 0, 1, 0]

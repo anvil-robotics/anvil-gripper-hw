@@ -1,0 +1,12 @@
+# Each camera's nominal pose in the frame it is fixed to, from openyam.urdf. A camera on an arm is in the
+# link it is fixed to, and its pose in the robot's root is that link's forward kinematics at the arm's joint
+# angles.
+#
+# xyz_m and quat_xyzw are the camera frame's pose in `frame`, T_frame_camera: they map a point in camera
+# coordinates into `frame`. The camera frame is the optical one, at the front of the lens: z out of the lens,
+# x right in the image, y down.
+cameras:
+  wrist_cam:
+    frame: hand
+    xyz_m: [0.07400, 0.00100, 0.00900]
+    quat_xyzw: [-0.28364, -0.28364, 0.64773, 0.64772]

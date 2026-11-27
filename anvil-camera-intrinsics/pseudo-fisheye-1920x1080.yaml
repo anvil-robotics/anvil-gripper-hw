@@ -1,0 +1,20 @@
+image_width: 1920
+image_height: 1080
+camera_name: pseudo-fisheye
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [768.104, 0, 990.846, 0, 768.401, 617.391, 0, 0, 1]
+distortion_model: equidistant
+distortion_coefficients:
+  rows: 1
+  cols: 4
+  data: [0.12223, -0.0343989, -0.00417198, 0.00219976]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [768.104, 0, 990.846, 0, 0, 768.401, 617.391, 0, 0, 0, 1, 0]
